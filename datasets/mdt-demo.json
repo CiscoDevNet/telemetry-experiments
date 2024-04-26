@@ -1,0 +1,97 @@
+[
+    {
+        "Event": "1220:shutdown interface on Leaf7",
+        "Entity": "Leaf7",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-fib-common-oper:fib-statistics_nodes_node_drops.csv:0/0/CPU0:incomplete-adjacency-packets CHANGE: 56.0",
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_latest_interfaces-mib-counters.csv:HundredGigE0/0/0/10:carrier-transitions CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_counters_packet-counters_packet-counter.csv:bfd-mgmt-pkt-display-type-none:HundredGigE0/0/0/10:0/0/CPU0:hello-transmit-count CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_session-briefs_session-brief.csv:172.31.12.52:HundredGigE0/0/0/10:0/0/CPU0:0/0/CPU0:ip-single-hop:status-brief-information__async-interval-multiplier__negotiated-local-transmit-interval CHANGE: 1667000.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_session-briefs_session-brief.csv:172.31.12.52:HundredGigE0/0/0/10:0/0/CPU0:0/0/CPU0:ip-single-hop:status-brief-information__async-interval-multiplier__negotiated-remote-transmit-interval CHANGE: 1667000.0"
+        ]
+    },
+    {
+        "Event": "1220:shutdown interface on Leaf7",
+        "Entity": "spine4-3464",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-show_interface.csv:Ethernet1/26:bytes-received CHANGE: 315954638848.0",
+            "Cisco-show_interface.csv:Ethernet1/27:bytes-received CHANGE: 315884338688.0"
+        ]
+    },
+    {
+        "Event": "2450:enable bfd on Spine4-3464 Ethernet1/25",
+        "Entity": "leaf7",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_counters_packet-counters_packet-counter.csv:bfd-mgmt-pkt-display-type-none:HundredGigE0/0/0/16:0/0/CPU0:hello-receive-count CHANGE: 4.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_session-briefs_session-brief.csv:172.31.14.48:HundredGigE0/0/0/16:0/0/CPU0:0/0/CPU0:ip-single-hop:status-brief-information__async-interval-multiplier__negotiated-remote-transmit-interval CHANGE: -1667000.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_summary.csv:::session-state__down-count CHANGE: -1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_summary.csv:::session-state__up-count CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-tcp-oper:tcp-connection_nodes_node_statistics_pcbs_pcb.csv:0:0:0:0:0:0:0:0:0:0:7f67fc022c68:1610612736:read-io-counts__arm-count CHANGE: 2.0"
+        ]
+    },
+    {
+        "Event": "2450:enable bfd on Spine4-3464 Ethernet1/25",
+        "Entity": "spine4-3464",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-show_interface.csv:Ethernet1/25:bytes-received CHANGE: 165678715837.26367"
+        ]
+    },
+    {
+        "Event": "3630:enable interface on Leaf7:HundredGigE0/0/10",
+        "Entity": "Leaf7",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_generic-counters.csv:HundredGigE0/0/0/10:carrier-transitions CHANGE: 1.0",
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_latest_generic-counters.csv:HundredGigE0/0/0/10:carrier-transitions CHANGE: 1.0",
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_total_generic-counters.csv:HundredGigE0/0/0/10:carrier-transitions CHANGE: 1.0",
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_total_interfaces-mib-counters.csv:HundredGigE0/0/0/10:carrier-transitions CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_counters_packet-counters_packet-counter.csv:bfd-mgmt-pkt-display-type-none:HundredGigE0/0/0/10:0/0/CPU0:hello-receive-count CHANGE: 5.0"
+        ]
+    },
+    {
+        "Event": "3630:enable interface on Leaf7:HundredGigE0/0/10",
+        "Entity": "spine4-3464",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-ip-tcp-oper:tcp-connection_nodes_node_statistics_summary.csv:0/RP0/CPU0:::connections-dropped CHANGE: 1.0",
+            "Cisco-IOS-XR-infra-statsd-oper:infra-statistics_interfaces_interface_cache_generic-counters.csv:MgmtEth0/RP0/CPU0/0:bytes-sent CHANGE: 39387154.96875",
+            "Cisco-IOS-XR-ip-tcp-oper:tcp-connection_nodes_node_statistics_summary.csv:0/RP0/CPU0:::embryonic-connection-dropped CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-tcp-oper:tcp-connection_nodes_node_statistics_summary.csv:0/RP0/CPU0:::iq-sock-writes CHANGE: 3.0",
+            "Cisco-IOS-XR-ip-tcp-oper:tcp-connection_nodes_node_statistics_summary.csv:0/RP0/CPU0:::keep-alive-dropped CHANGE: 1.0"
+
+        ]
+    },
+    {
+        "Event": "4820:Break BFD on Spine4-3464:eth1/25",
+        "Entity": "Leaf7",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_counters_packet-counters_packet-counter.csv:bfd-mgmt-pkt-display-type-none:HundredGigE0/0/0/16:0/0/CPU0:hello-receive-count CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_session-briefs_session-brief.csv:172.31.14.48:HundredGigE0/0/0/16:0/0/CPU0:0/0/CPU0:ip-single-hop:status-brief-information__async-interval-multiplier__negotiated-local-transmit-interval CHANGE: 1667000.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_session-briefs_session-brief.csv:172.31.14.48:HundredGigE0/0/0/16:0/0/CPU0:0/0/CPU0:ip-single-hop:status-brief-information__async-interval-multiplier__negotiated-remote-transmit-interval CHANGE: 1667000.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_summary.csv:::session-state__down-count CHANGE: 1.0",
+            "Cisco-IOS-XR-ip-bfd-oper:bfd_summary.csv:::session-state__up-count CHANGE: -1.0"
+        ]
+    },
+    {
+        "Event": "4820:Break BFD on Spine4-3464:eth1/25",
+        "Entity": "spine4-3464",
+        "Type": "NETWORK-DEVICE",
+        "Source": "MDT",
+        "Features": [
+            "Cisco-IOS-XR-drivers-media-eth-oper:ethernet-interface_statistics_statistic.csv:MgmtEth0/RP0/CPU0/0:total-good-bytes-transmitted CHANGE: 39592323.234375",
+            "Cisco-IOS-XR-pfi-im-cmd-oper:interfaces_interface-xr_interface.csv:009e.1e5d.0c2c:2:MgmtEth0/RP0/CPU0/0:full:10.200.96.23:im-attr-link-type-auto:009e.1e5d.0c2c:im-attr-media-1000base-t:<No interface>:interface-statistics__full-interface-stats__bytes-sent CHANGE: 39581474.78125"
+        ]
+    }
+]   

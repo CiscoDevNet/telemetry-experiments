@@ -1,0 +1,33 @@
+[   
+    {
+        "Entity": "router-7",
+        "Type": "NETWORK_DEVICE",
+        "Source": "SYSLOG",
+        "File": "R7_syslog",
+        "Features": [
+            "Mar 15 23:39:29 r7-gi0_3--r10-gi0_2.virl.lab 147: *Mar 15 22:38:44.929: %SYS-5-CONFIG_I: Configured from console by cisco on vty0 (172.16.0.94)",
+            "Mar 15 23:40:47 r7-gi0_3--r10-gi0_2.virl.lab 149: *Mar 15 22:40:02.852: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.5 on GigabitEthernet0/2 from LOADING to FULL, Loading Done",
+            "Mar 15 23:40:27 r7-gi0_3--r10-gi0_2.virl.lab 148: *Mar 15 22:39:43.757: %OSPF-5-ADJCHG: Process 1, Nbr 10.0.0.5 on GigabitEthernet0/2 from FULL to DOWN, Neighbor Down: Dead timer expired",
+            "Mar 15 23:39:27 r7-gi0_3--r10-gi0_2.virl.lab 146: *Mar 15 22:38:43.177: %SSH-5-SSH_COMPLIANCE_VIOLATION_RSA_KEY_SIZE: SSH RSA Key Size compliance violation detected. Kindly note that the usage of keys smaller than 2048 bits will be deprecated in the upcoming releases. Please revise your key configuration accordingly to avoid service impact."
+        ]
+    },
+    {
+        "Entity": "kube-controller",
+        "Type": "KUBERNETES_POD",
+        "Source": "SYSLOG",
+        "File": "kube-controller-manager-xp02-vm20.log",
+        "Features": [
+            "I0315 18:55:13.364579       1 controllermanager.go:187] \"Starting\" version=\"v1.29.2\"",
+            "I0315 18:55:40.562256       1 taint_eviction.go:285] \"Starting\" controller=\"taint-eviction-controller\"",
+            "I0315 18:55:13.369628       1 secure_serving.go:213] Serving securely on 127.0.0.1:10257",
+            "I0315 18:55:13.371998       1 dynamic_cafile_content.go:157] \"Starting controller\" name=\"request-header::/etc/kubernetes/pki/front-proxy-ca.crt\"",
+            "I0315 18:55:13.372216       1 dynamic_cafile_content.go:157] \"Starting controller\" name=\"client-ca-bundle::/etc/kubernetes/pki/ca.crt\"",
+            "I0315 18:55:30.469688       1 controllermanager.go:735] \"Started controller\" controller=\"serviceaccount-token-controller\"",
+            "I0315 18:55:30.504420       1 controllermanager.go:735] \"Started controller\" controller=\"endpointslice-controller\"",
+            "I0315 18:55:30.514495       1 controllermanager.go:735] \"Started controller\" controller=\"statefulset-controller\"",
+            "I0315 18:55:30.523115       1 controllermanager.go:735] \"Started controller\" controller=\"ttl-controller\"",
+            "I0315 18:55:30.528264       1 controllermanager.go:735] \"Started controller\" controller=\"node-lifecycle-controller\""
+        ]
+
+    }
+]
